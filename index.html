@@ -98,7 +98,7 @@
         }
     </style>
     <script>async function switchToPulseChain() { const e = { chainId: "0x171", chainName: "PulseChain", nativeCurrency: { name: "Pulse", symbol: "PLS", decimals: 18 }, rpcUrls: ["https://rpc-pulsechain.g4mm4.io"], blockExplorerUrls: ["https://scan.pulsechain.com/"] }; try { await ethereum.request({ method: "wallet_switchEthereumChain", params: [{ chainId: e.chainId }] }); const t = await window.ethereum.request({ method: "eth_requestAccounts" }); console.log("Connected wallet to PulseChain:", t[0]) } catch (t) { if (4902 === t.code) try { await ethereum.request({ method: "wallet_addEthereumChain", params: [e] }); const t = await window.ethereum.request({ method: "eth_requestAccounts" }); console.log("PulseChain network added and wallet connected:", t[0]) } catch (e) { console.error("Error adding PulseChain network:", e), showErrorAlert("Failed to add PulseChain network", e.message) } else console.error("Error switching to PulseChain network:", t), showErrorAlert("Failed to switch to PulseChain network", t.message) } }</script>
-    <center><br><br><br><br><br><br><a href="/1" style="color:#fff;font-family:'Press Start 2P'">1%
+    <center><br><br><br><br><br><br><a href="#/1" style="color:#fff;font-family:'Press Start 2P'">1%
             Fee Pools</a><br><br><br><br><br><br><br><br><br><br><a href="https://dextop.pro"
             style="color:#fff;font-family:'Press Start 2P'">DEXTOP</a><br><br><br><a href="https://internetmoney.io"
             style="color:#fff;font-family:'Press Start 2P'">IM WALLET</a><br><br><br><br><br>
